@@ -2,8 +2,8 @@
 
 angular.module("app").constant("appConfig", {
         ver: "1.0.0",
-        apiMainUrl: "https://still-fjord-48398.herokuapp.com/api",
-        downloadUrl: "https://still-fjord-48398.herokuapp.com",
+        apiMainUrl: "http://localhost:8100/api",
+        downloadUrl: "http://localhost:8100",
         apiClient: {
             user: "Ionic",
             secret: "ionicSimpleAppKey"
