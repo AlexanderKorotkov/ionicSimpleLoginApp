@@ -5,9 +5,8 @@ angular.module("app").constant("appConfig", {
         apiMainUrl: "https://still-fjord-48398.herokuapp.com/api",
         downloadUrl: "https://still-fjord-48398.herokuapp.com",
         apiClient: {
-            user: "Domenick Bechtelar III",
-            secret: "B2*|'g<]",
-            type: "password"
+            user: "Ionic",
+            secret: "ionicSimpleAppKey"
         }
     }
 );

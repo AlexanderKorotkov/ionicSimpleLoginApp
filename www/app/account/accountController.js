@@ -5,7 +5,7 @@ angular.module('app')
       enableFriends: true
     };
     $scope.logOut = function(){
-      if (true === authService.isAuthenticated()) {
+      if (authService.isAuthenticated()) {
         authService.removeUserIdentity();
         $state.go('login');
       }

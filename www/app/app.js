@@ -1,8 +1,4 @@
-// Ionic Starter App
-
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-
+"use strict";
 angular.module('app', ['ionic','ngCookies', 'ngMessages'])
 .run(function($ionicPlatform, $rootScope, $state, authService) {
 
@@ -26,14 +22,14 @@ angular.module('app', ['ionic','ngCookies', 'ngMessages'])
         $state.go("tab.dash");
       } else if (!authService.isAuthenticated() && toState.data) {
         event.preventDefault();
-        $state.go("login");
+        $state.go("signUp");
       }
     });
 
 })
 
-.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
-
+.config(function($stateProvider, $urlRouterProvider,$httpProvider,$ionicConfigProvider) {
+    $ionicConfigProvider.views.maxCache(0);
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the www can be in.
