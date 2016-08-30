@@ -9,7 +9,7 @@ angular.module('app')
     $scope.login = function() {
       LoginService.loginUser($scope.user).success(function(result) {
         if(authService.setUserIdentity(result)){
-          $state.go("tab.dash");
+          $state.go("tab.dash", { userId : result.user.id });
           $scope.user = {};
         }
       }).error(function(result) {
