@@ -38,7 +38,7 @@ angular.module('app', ['ionic','ngCookies', 'ngMessages'])
 
       // setup an abstract state for the tabs directive
       .state('tab', {
-        url: '/tab/:userId',
+        url: '/tab',
         abstract: true,
         templateUrl: 'app/tabs.html',
         data: true
